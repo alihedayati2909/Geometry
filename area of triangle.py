@@ -1,5 +1,8 @@
 import math
-print("Welcome to this code:) in this code you can calculate the area of any triangle and you can find the height corresponding to the longest side of the triangle. Good luck! ")
+import sys
+print("Welcome to this code:) in this code you can calculate the area of any triangle "
+    "and you can find the height corresponding to the longest side of the triangle. "
+    "\nGood luck! ")
 a = int(input("Enter the a: "))
 b = int(input("Enter the b: "))
 c = int(input("Enter the c: "))
@@ -15,6 +18,7 @@ if (a + b) > c and (a + c) > b and (b + c) > a:
         h = (2*s)/b
     else:
         print("Error")
+        sys.exit(1)
 
     print(f"the area is equal to {s:.2f}, and the height corresponding to the longest side of the triangle is equal to {h:.2f} ")
 else:
